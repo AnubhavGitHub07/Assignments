@@ -64,9 +64,9 @@ npm start
 
 ## 📝 Assignments
 
-- [ ] Assignment 1 - [Description]
-- [ ] Assignment 2 - [Description]
-- [ ] Assignment 3 - [Description]
+- [ ] Assignment 1 - A portfolio website showcases your skills, projects, and achievements. Building it from scratch strengthens your HTML and CSS knowledge.
+- [ ] Assignment 2 - A professional landing page with advanced CSS styling and theme options.
+
 
 ## 📚 Course Information
 
