@@ -65,7 +65,7 @@ npm start
 ## 📝 Assignments
 
 - [ ] Assignment 1 - A portfolio website showcases your skills, projects, and achievements. Building it from scratch strengthens your HTML and CSS knowledge.
-- [ ] Assignment 2 - A professional landing page with advanced CSS styling and theme options.
+- [ ] Assignment 2 - A to-do list is a simple project to apply JavaScript fundamentals and DOM manipulation.
 
 
 ## 📚 Course Information
