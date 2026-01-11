@@ -1,0 +1,116 @@
+/* -------- Premium Ecommerce Product Card -------- */
+
+.product-card {
+  background: var(--card);
+  border-radius: var(--radius);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgba(15, 23, 42, 0.06);
+  box-shadow: var(--shadow);
+  transition: transform 220ms cubic-bezier(.2,.9,.3,1),
+              box-shadow 220ms ease;
+  cursor: pointer;
+}
+
+.product-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 28px rgba(16,24,40,0.10);
+}
+
+/* --- Media Area / Product Thumbnail --- */
+.product-card .media {
+  height: 200px; /* made taller for premium look */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(180deg,#fdfdfd,#f7f7f7);
+}
+
+.product-card .media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* --- Text & Body Content --- */
+.product-card .body {
+  padding: 14px 14px 18px; 
+  text-align: left;
+  gap: 4px;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-card .title {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: -0.25px;
+  color: var(--text);
+}
+
+.product-card .desc {
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin: 4px 0 8px 0;
+  line-height: 1.35;
+  height: 2.6em;         /* 2 lines max */
+  overflow: hidden;
+}
+
+/* --- Meta Row (Price + Rating / Category etc) --- */
+.product-card .meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 6px;
+}
+
+.product-card .price {
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: var(--accent);
+}
+
+/* star rating subtle */
+.product-card .rating {
+  font-size: 0.9rem;
+  color: #f59e0b;
+}
+
+/* --- Add to Cart Button --- */
+.product-card .add-btn {
+  margin-top: 14px;
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: none;
+  font-size: 0.9rem;
+  font-weight: 600;
+  background: var(--accent);
+  color: #fff;
+  cursor: pointer;
+  transition: background 180ms ease, transform 120ms ease;
+}
+
+.product-card .add-btn:hover {
+  background: var(--accent-soft);
+}
+
+.product-card .add-btn:active {
+  transform: translateY(1px);
+}
+
+/* optional subtle badge (new, sale, trending) */
+.product-card .badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: var(--accent);
+  color: #fff;
+  font-size: 0.75rem;
+  padding: 3px 8px;
+  border-radius: 999px;
+  font-weight: 600;
+}
